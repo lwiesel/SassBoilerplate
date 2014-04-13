@@ -1,0 +1,20 @@
+{
+  "name": "SassBoilerplate",
+  "version": "0.1.0",
+  "authors": [
+    "Laurent <wiesel.laurent@gmail.com>"
+  ],
+  "description": "SASS structure for new projects",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "gridle": "~1.1.0"
+  }
+}
