@@ -6,32 +6,43 @@
  *
  */
 
- /* 
-  * -------------------------
-  * Global parameters
-  * -------------------------
-  */
+/* 
+ * -------------------------
+ * Global parameters
+ * -------------------------
+ */
 @import "global_variables";
 
- /*
-  * -------------------------
-  * Quarks
-  * -------------------------
-  */
-@import "quarks/normalize";
+/*
+ * -------------------------
+ * Quarks
+ * -------------------------
+ * IMPORTANT: no classes here, just basic html elements styling.
+ * You shouldn't need to import just a part of the quark files
+ * so importing quarks/_all_quarks.scss should be fine.
+ *
+ * Normalize.scss and some compass partials (included) are used
+ * to generate a basic normalization of the html elements behaviors.
+ * If you want to modify an element base behavior, add some mixins
+ * and properties in the _[element].scss file.
+ */
+@import "quarks/all_quarks";
 
- /*
-  * -------------------------
-  * Atoms
-  * -------------------------
-  */
-  /* Grid */
-  @import "atoms/grid/grid";
+/*
+ * -------------------------
+ * Atoms
+ * -------------------------
+ */
+/* Grid */
+@import "atoms/grid/grid";
 
-  /* Bootstrap */
+/* Bootstrap */
 
-  /* Foundation */
+/* Foundation */
 
- /*
-  * Molecules
-  */
+/*
+ * Molecules
+ */
+/* !!! This is a molecule example !!! */
+@import "molecules/molecule";
+/* !!! This is a molecule example !!! */
