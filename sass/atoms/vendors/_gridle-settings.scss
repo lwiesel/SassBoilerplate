@@ -1,0 +1,18 @@
+// Import gridle :
+@import 'gridle/sass/gridle/gridle';
+
+// Configure :
+$gridle-columns-count 			: 20;
+$gridle-gutter-width 			: 20px;
+$gridle-name-multiplicator  	: 1;
+$gridle-direction  				: ltr; /* ltr | rtl */
+$gridle-ie7-support 			: true; 
+$gridle-debug 					: false;
+$gridle-debug-show-class-names 	: false;
+$gridle-html-states-classes 	: false; // not really for production, used for demo here...
+
+// @include gridle_register_default_states();
+@include gridle_register_state( "mobile" , null , 560px, false ); // null mean no min width
+@include gridle_register_state( "tablet" , 561px , 900px, false );
+@include gridle_register_state( "desktop" , 901px , null, false );
+// @include gridle_register_state('ipad-landscape', 'only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape)');

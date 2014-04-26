@@ -5,22 +5,25 @@
  *
  */
 
- /* 
-  * -------------------------
-  * Molecule parameters
-  * -------------------------
-  */
+/* 
+ * -------------------------
+ * Molecule parameters
+ * -------------------------
+ * IMPORTANT: do not use global parameters
+ * directly in the mixins or the classes.
+ * Set local parameters instead.
+ */
+// @local_parameter = @global_parameter;
+
+/* 
+ * -------------------------
+ * Molecule mixins
+ * -------------------------
+ */
 
 
- /* 
-  * -------------------------
-  * Molecule mixins
-  * -------------------------
-  */
-
-
- /* 
-  * -------------------------
-  * Molecule classes
-  * -------------------------
-  */
+/* 
+ * -------------------------
+ * Molecule classes
+ * -------------------------
+ */

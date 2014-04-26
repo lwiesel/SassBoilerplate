@@ -1,0 +1,33 @@
+/**
+ * _grid.scss
+ *
+ * Grid component.
+ *
+ */
+
+/* 
+ * -------------------------
+ * Import of Gridle settings
+ * -------------------------
+ * Do not modify _grid-settings.scss directly in the
+ * vendors directory, so that updates won't break
+ * these settings.
+ */
+@import 'vendors/gridle/gridle-settings';
+
+/* 
+ * -------------------------
+ * Generation of the grid using Gridle
+ * -------------------------
+ */
+@include gridle_generate_classes();
+
+/* 
+ * -------------------------
+ * Other grid behaviors
+ * -------------------------
+ */
+.container {
+	margin:0 auto;
+	max-width:960px;
+}

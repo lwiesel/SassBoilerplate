@@ -1,4 +1,4 @@
 {
-  "directory": "components",
+  "directory": "sass/atoms/vendors",
   "json": "bower.json"
 }
