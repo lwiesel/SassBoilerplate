@@ -144,7 +144,7 @@ do
 	count=`egrep -ci "@import \"html_elements\_${FILE}.scss\"" "${ROOT_PATH}/sass/quarks/${REF_FILE}"`
 	#echo "${count} references of _${FILE}.scss found in ${REF_FILE}"
 	if [[ "$count" -eq 0 ]]; then
-		echo "// @import \"html_elements\_${FILE}.scss\"" >> "${ROOT_PATH}/sass/quarks/${REF_FILE}"
+		echo "// @import \"html_elements/${FILE}\"" >> "${ROOT_PATH}/sass/quarks/${REF_FILE}"
 		echo "Added reference to _${FILE}.scss in ${REF_FILE}"
 	else
 		echo "Reference to _${FILE}.scss already in ${REF_FILE}"
